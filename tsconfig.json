@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    /* Куда компилировать файлы */
+    "noImplicitAny": true,
+    /* Запрещать неявный тип `any` */
+    "module": "ESNext",
+    /* Тип модульной системы (ES6, CommonJS и т.д.) */
+    "target": "es5",
+    /* Уровень ECMAScript, на который компилируется код */
+    "jsx": "react",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    /* Библиотеки типов, включаемые в компиляцию */
+    "allowJs": true,
+    /* Разрешить импорт JS-файлов */
+    "moduleResolution": "node",
+    /* Стратегия разрешения модулей (node или bundler) */
+    "allowSyntheticDefaultImports": true,
+    /* Разрешить default-импорт из модулей без него */
+    "esModuleInterop": true,
+    /* Помогает избежать ошибок при импорте CommonJS-модулей*/
+    "baseUrl": "."
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
