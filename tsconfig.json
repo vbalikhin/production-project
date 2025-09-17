@@ -23,7 +23,12 @@
     /* Разрешить default-импорт из модулей без него */
     "esModuleInterop": true,
     /* Помогает избежать ошибок при импорте CommonJS-модулей*/
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "./src/*"
+      ]
+    }
   },
   "ts-node": {
     "compilerOptions": {

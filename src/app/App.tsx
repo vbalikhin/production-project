@@ -1,10 +1,10 @@
 import React, {Suspense} from 'react';
 import {Link, Route, Routes} from 'react-router-dom'
-import {MainLazy} from "./pages/Main/Main.lazy";
-import {InfoLazy} from "./pages/Info/Info.lazy";
 import './styles/index.scss'
-import {useTheme} from "./theme/useTheme";
-import {classNames} from "./helpers/classNames/classNames";
+import {useTheme} from "app/providers/ThemeProvider";
+import {classNames} from "shared/lib/classNames/classNames";
+import {Info} from "pages/Info";
+import {Main} from "pages/Main";
 
 
 const App = () => {
@@ -16,8 +16,8 @@ const App = () => {
             <Link to={'/info'}>Инфо</Link>
             <Suspense fallback={<div>Loading...</div>}>
                 <Routes>
-                    <Route path={'/'} element={<MainLazy/>}/>
-                    <Route path={'/info'} element={<InfoLazy/>}/>
+                    <Route path={'/'} element={<Main/>}/>
+                    <Route path={'/info'} element={<Info/>}/>
                 </Routes>
             </Suspense>
         </div>
