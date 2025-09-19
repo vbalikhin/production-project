@@ -1,0 +1,7 @@
+.Sidebar {
+  height: calc(100vh - var(--navbar-height));
+  width: 300px;
+  background: var(--sidebar-bg-color);
+
+  position: relative;
+}
